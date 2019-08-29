@@ -35,3 +35,5 @@ Route::get("/products/add", "ProductsController@add")->middleware("auth");
 Route::post("/products/add", "ProductsController@store")->middleware("auth");
 
 Route::post("/products/delete", "ProductsController@delete")->middleware("auth");
+
+Route::resource('/entidadFaker', 'EntidadFakerController');
